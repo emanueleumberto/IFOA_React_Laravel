@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table</h1>
+    <table border="1">
+        <caption>Mia Tab</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Città</th>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td>Roma</td>
+        </tr>
+        <tr>
+            <td>Giuseppe</td>
+            <td>Verdi</td>
+            <td>Milano</td>
+        </tr>
+        <tr>
+            <td>Francesca</td>
+            <td>Neri</td>
+            <td>Napoli</td>
+        </tr>
+        <tr>
+            <td colspan="2">Tot.</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <h1>Table con Thead, Tbody, Tfoot</h1>
+    <table border="1">
+        <caption>Mia Tab</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Città</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mario</td>
+                <td>Rossi</td>
+                <td>Roma</td>
+            </tr>
+            <tr>
+                <td>Giuseppe</td>
+                <td>Verdi</td>
+                <td>Milano</td>
+            </tr>
+            <tr>
+                <td>Francesca</td>
+                <td>Neri</td>
+                <td>Napoli</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Tot.</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr />
+
+    <h1>Form</h1>
+
+    <form method="get" action="miapaginadelserver.php">
+        <fieldset>
+            <legend>Mio Form</legend>
+            <label for="mionome">Nome:</label>
+            <input type="text" name="nome" id="mionome" autofocus minlength="10"><br />
+            <label for="miocognome">Cognome:</label>
+            <input type="text" name="cognome" id="miocognome"><br />
+            <label for="miaeta">Età:</label>
+            <input type="number" name="eta" id="miaeta" value="18"><br />
+            <label for="miaemail">Email:</label>
+            <input type="email" name="email" id="miaemail" placeholder="mail@example.ext" required><br />
+            <label for="miapassword">Password:</label>
+            <input type="password" name="password" id="miapassword" required><br />
+            <label for="miaDataNascita">Data di Nascita:</label>
+            <input type="date" name="datanascita" id="miaDataNascita"><br />
+            <label for="mieiLinguaggi">Linguaggi:</label>
+            <select name="linguaggi" id="mieiLinguaggi">
+                <optgroup label="Front-End">
+                    <option value="Javascript">Javascript</option>
+                    <option value="React">React</option>
+                </optgroup>
+                <optgroup label="Back-End">
+                    <option value="Php">Php</option>
+                    <option value="Laravel">Laravel</option>
+                </optgroup>
+            </select><br />
+            <textarea name="note" placeholder="Inserisci note..." rows="5" cols="25">
+            </textarea><br />
+            <button type="submit">Invia</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <hr />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.9763556255643!2d12.474818576589874!3d41.871855165804384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6173fb8c8ea7%3A0x1a413c9507f97391!2sEPICODE!5e0!3m2!1sit!2sit!4v1698144852935!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.w3.org/" height="500" width="500"></iframe>
+
+    <hr />
+
+    <div id="header">
+        <div id="nav">
+            <!-- Logo e menu di navigazione -->
+        </div>
+    </div>
+    <div id="main">
+        <!-- Contenuto della pagina -->
+    </div>
+    <div id="footer">
+        <!-- Riferimenti ed indirizzi della pagina -->
+    </div>
+
+    <hr />
+
+    <header>
+        <nav>
+            <!-- Logo e menu di navigazione -->
+        </nav>
+    </header>
+    <main>
+        <!-- Contenuto della pagina -->
+    </main>
+    <footer>
+        <!-- Riferimenti ed indirizzi della pagina -->
+    </footer>
+
+    <hr />
+    <!-- Chi siamo -->
+    <header>
+        <nav>
+            <!-- Logo e menu di navigazione -->
+        </nav>
+    </header>
+    <main>
+        <!-- Contenuto della pagina -->
+        <section>
+            <!-- Contenuto principale della pagina -->
+        </section>
+        <section>
+            <!-- Contenuto principale della pagina -->
+        </section>
+        <section>
+            <!-- Contenuto principale della pagina -->
+        </section>
+        <aside>
+            <!-- Contenuto secondario della pagina -->
+        </aside>
+    </main>
+    <footer>
+        <!-- Riferimenti ed indirizzi della pagina -->
+    </footer>
+
+    <hr />
+    <!-- Blog -->
+    <header>
+        <nav>
+            <!-- Logo e menu di navigazione -->
+        </nav>
+    </header>
+    <main>
+        <!-- Contenuto della pagina -->
+        <article>
+            <!-- Contenuto indipendente della pagina -->
+        </article>
+        <article>
+            <!-- Contenuto indipendente della pagina -->
+        </article>
+        <article>
+            <!-- Contenuto indipendente della pagina -->
+        </article>
+        <article>
+            <!-- Contenuto indipendente della pagina -->
+        </article>
+        <aside>
+            <!-- Contenuto secondario della pagina -->
+        </aside>
+    </main>
+    <footer>
+        <!-- Riferimenti ed indirizzi della pagina -->
+    </footer>
+</body>
+</html>
