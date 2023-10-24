@@ -1,0 +1,7 @@
+git clone https://github.com/vostroaccount/vostrarepo.git
+
+git status -> verifica lo stato di una repository locale
+
+git add .
+git commit -m "messaggio"
+git push
