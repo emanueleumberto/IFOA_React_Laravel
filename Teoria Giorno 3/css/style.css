@@ -1,0 +1,131 @@
+/* CSS Esterno */
+
+/* Selettore Universale */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Selettore di Tipo o di Tag o di Base */
+/* p {
+    color: aquamarine;
+    font-weight: bold;
+    font-style: italic;
+} */
+
+.nuovo {
+    text-transform: capitalize;
+}
+
+/* Selettore di Tipo di gruppo*/
+p, h3 {
+    text-transform: uppercase;
+}
+
+/* Selettore di tipo ID */
+#rosso {
+    color: rgba(64, 8, 218, 0.632);
+}
+
+#abc {
+    text-decoration: underline;
+    background-color: blueviolet;
+}
+
+/* Selettore di tipo Class */
+.primary {
+    color: green;
+    text-decoration: line-through;
+}
+
+.txt {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Selettore dei discendenti */
+article p {
+    color: yellow;
+    background-color:blue;
+}
+
+/* Selettore di figli diretti */
+article > p {
+    color: blue;
+    background-color:yellow;
+}
+
+/* Selettore di fratelli adiacenti */
+main > article h1 + a {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+/* Selettore in base ad un attributo */
+a[title] {
+    color: rgb(0, 255, 136);
+}
+
+a[title="abc"] {
+    color: rgb(0, 255, 136);
+    font-size: 50px;
+}
+
+a {
+    color: brown;
+}
+
+/* Pseudo Classi */
+a:hover {
+    color: antiquewhite;
+    background-color: cornflowerblue;
+    text-decoration: none;
+}
+
+article:first-child {
+    border: 3px solid black;
+}
+
+
+article:last-child {
+    border: 3px solid rgb(0, 60, 255);
+}
+
+article:nth-child(2) {
+    border: 3px solid rgb(255, 0, 221);
+}
+
+article:nth-child(2n+1) {
+    border: 3px solid black;
+}
+
+article:not(.test) {
+    border: 5px solid rgb(0, 0, 0);
+} 
+
+/* Pseudo Elementi */
+
+/* section p::first-line {
+    color: brown;
+    text-transform: lowercase;
+} */
+
+section p::first-letter {
+    color: brown;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section p::selection {
+    background-color: gold;
+}
+
+section h1::before {
+    font-weight: bold;
+    color: grey;
+    content: "- ";
+}
+
+section h1::after {
+    font-weight: bold;
+    color: grey;
+    content: " -";
+}

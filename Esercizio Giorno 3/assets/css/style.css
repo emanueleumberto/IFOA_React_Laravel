@@ -1,0 +1,53 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    background-color: rgb(255, 255, 172)
+}
+
+header img {
+    width: 200px;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article figure img {
+    width: 100%;
+}
+
+article figure figcaption {
+    text-align: center;
+}
+
+div.featured p {
+    color: rgb(162, 105, 0)
+}
+
+a {
+    color: rgb(0, 126, 126);
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+hr {
+    color: rgb(255, 2, 2);
+}
+
+section.ingredients p, section.method p:first-child {
+    font-weight: bold;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}

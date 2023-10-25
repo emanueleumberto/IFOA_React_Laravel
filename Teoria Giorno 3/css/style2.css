@@ -1,0 +1,23 @@
+html {
+    font-size: 16px;
+}
+
+article {
+    font-size: 25px;
+}
+
+article h1 {
+    font-size: 80%;
+}
+
+article p {
+    color: red;
+    font-size: 0.9em;
+    font-weight: 200;
+    font-variant: small-caps;
+    font-family: 'Nunito', sans-serif;
+}
+
+article a {
+    font-size: 1rem;
+}
