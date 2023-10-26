@@ -43,6 +43,10 @@ hr {
     color: rgb(255, 2, 2);
 }
 
+/* section p {
+    font-weight: bold;
+} */
+
 section.ingredients p, section.method p:first-child {
     font-weight: bold;
 }
