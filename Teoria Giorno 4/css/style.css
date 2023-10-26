@@ -1,0 +1,186 @@
+html {
+    background-color: rgb(218, 255, 218);
+}
+
+div {
+    /* border: 1px solid black; */
+    background-color: white;
+}
+
+/* Margin | Padding | Border */
+
+.box1 {
+    width: 500px;
+    /* margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px; */
+
+    /* margin: 50px 80px 50px 80px; */
+    /* margin: 50px 0 0 0; */
+    /* margin: 50px 80px; */
+    margin: 50px;
+
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+
+    /* padding: 20px 10px 20px 10px;  */
+    padding: 20px;
+
+    /* border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: red;
+
+    border-left-style: dotted;
+    border-left-width: 3px;
+    border-left-color: rgb(0, 8, 255); */
+
+    /* border-width: 2px 3px 4px 5px;
+    border-style: solid dotted dashed groove;
+    border-color: blueviolet brown blue black; */
+
+    border: 1px solid red;
+
+    border-radius: 20px;
+    
+}
+
+.box2 {
+    width: 900px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: content-box; /* Default */
+}
+
+.box3 {
+    width: 900px;
+    background-color: bisque;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box4 {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid red;
+    outline: 5px solid yellow;
+    outline-offset: 10px;
+    margin: 20px;
+    background-image: url(../img/pattern.png);
+    background-size: cover;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* Background */
+
+.lays {
+    height: 250px;
+    width: 500px;
+    /* background-color: #FFE800;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: center top; */
+    /* background-size: cover; */
+
+    background: #FFE800 url(../img/pattern.png) repeat center top;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+.box5 {
+    background-color: rgb(136, 136, 136);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -220px;
+    margin-left: 20px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.box6 {
+    background-color: rgb(136, 136, 136);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: none;
+    /* visibility: hidden; */
+}
+.box7 {
+    background-color: rgb(136, 136, 136);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+
+span {
+    display: block;
+}
+
+p:target {
+    border: 1px solid black;
+}
+
+ol li {
+    list-style-type: upper-roman;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+ul li:hover {
+    background: #FFE800;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+table {
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+form input:focus {
+    border: 3px solid red;
+}
+
+form input:required {
+    background: yellow;
+}
+
+form input:disabled {
+    border: 10px solid green;
+}
+
+form input[type="email"] {
+    background-color: blueviolet;
+}
+
+h3:first-child {
+    border: 1px solid black;
+}
+
+h3:first-of-type {
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 1vw;
+}
