@@ -1,0 +1,182 @@
+/* IMPOSTAZIONI GENERALI */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* Font size del Browser 16px */
+    font-size: 0.8em; /* 14.4 px */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* 16px */
+    line-height: 1.5;
+    padding: 12px;
+    background-image: url(../img/sfondo.png);
+}
+
+hr {
+    display: none;
+}
+
+header, main, footer {
+    box-shadow: 1px 3px 3px #707070 ;
+}
+
+header div img, header nav, table, footer p {
+    margin: 20px 0;
+}
+
+/* HEADER */
+header {
+    background: rgb(0,153,191);
+    background: linear-gradient(173deg, rgba(0,153,191,1) 0%, rgba(0,106,136,1) 100%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding: 1em;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a::before {
+    content: "-> ";
+}
+
+header nav ul li a::after {
+    content: " <-";
+}
+
+/* MAIN */
+
+main {
+    background-color: #fff;
+    padding: 1em;
+    margin: 20px 0;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+section, aside div {
+    background-color: #dddddd;
+    padding: 1em;
+}
+
+aside div {
+    border: 1px solid #707070;
+}
+
+main h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #373737;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main h1, main p, ul, ol, iframe, main h2, section, aside div {
+    margin-bottom: 1em;
+}
+
+h1 + p {
+    color: #939393;
+}
+
+ul, ol {
+    margin-left: 1.5em;
+}
+
+strong {
+    color: #aa2072;
+    font-weight: bold;
+}
+
+a {
+    color: #386dbf;
+}
+
+iframe {
+    width:100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+code {
+    background-color: #dddddd;
+    border: 1px solid #707070;
+    border-radius: 7px;
+}
+
+/* TABELLE */
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+
+table thead {
+    background-color: #386dbf;
+    color: #fff;
+}
+
+th, td {
+    padding: 1em;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table {
+    border-bottom: 2px solid #386dbf;
+}
+/* FORM */
+
+form input {
+    padding: 0.6em;
+    border: 0;
+    border-bottom: 1px dashed #707070;
+}
+
+form button {
+    padding: 0.6em;
+    border: 0;
+    background-color: #386dbf;
+    color: #fff;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+aside div p:last-child {
+    text-align: right;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgb(0,85,102);
+    background: linear-gradient(173deg, rgba(0,85,102,1) 0%, rgba(48,58,56,1) 100%);
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+}
+
+footer address a:link {
+    color: #ff0199;
+    font-weight: bold;
+}
