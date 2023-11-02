@@ -94,6 +94,7 @@ let y = 15;
 let z = 25;
 let numArr = [x];
 
+// Soluzione 1
 if(x > y) {
   numArr.unshift(y); // [15, 10]
 } else {
@@ -107,7 +108,9 @@ if(z > x && z > y) {
 } else {
   numArr.splice(1,0,z);
 }
+console.log(numArr);
 
+// Soluzione 2
 if(x > y) {
   // x > y
   if(z > x) {
@@ -161,8 +164,9 @@ if(valNum % 2 === 0) {
 }
 
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
+  Modifica la logica del seguente algoritmo in modo che mostri 
+  in console il messaggio corretto in ogni circostanza.
+  let val = 4
   if (val < 10) {
       console.log("Meno di 10");
     } else if (val < 5) {
@@ -183,37 +187,74 @@ let val = 15
   }
 
 /* ESERCIZIO 11
-  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
+  Fornito il seguente oggetto, scrivi del codice per aggiungere una 
+  proprietà "city", il cui valore sarà "Toronto".
 */
 
 const me = {
   name: 'John',
   lastName: 'Doe',
+  /* age: 44,
+  address: {
+    city: 'Toronto',
+    state: 'Ontario',
+    street: 'abc 4'
+  }, */
   skills: ['javascript', 'html', 'css'],
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = 'Toronto';
+console.log(me);
 
 /* ESERCIZIO 12
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice 
+  per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice 
+  per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let ele = me.skills.pop();
+console.log(me, 'Rimosso: ' + ele)
 
 /* ESERCIZIO 14
-  Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
+  Scrivi del codice per creare un array inizialmente vuoto. 
+  Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let arr = [];
+arr[0] = 1; // arr.push(1); 
+arr[1] = 2; // arr.push(2);
+arr[2] = 3; // arr.push(3);
+arr[3] = 4; // arr.push(4);
+arr[4] = 5; // arr.push(5);
+arr[5] = 6; // arr.push(6);
+arr[6] = 7; // arr.push(7);
+arr[7] = 8; // arr.push(8);
+arr[8] = 9; // arr.push(9);
+arr[9] = 10; // arr.push(10);
+console.log(arr);
 
 /* ESERCIZIO 15
-  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
+  Scrivi del codice per sostituire l'ultimo elemento dell'array, 
+  ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// arr[9] = 100;
+// arr[arr.length-1] = 100;
+// arr.pop(); arr.push(100);
+// arr.splice(9, 1, 100);
+arr.splice(arr.length-1, 1, 100);
+
+console.log(arr);
