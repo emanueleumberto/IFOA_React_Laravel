@@ -125,14 +125,14 @@ console.log(isNaN(n)); // True
     } 
 */
 
-let count = 0;
+let count = 5;
 while (count > 0) {
     console.log("Ciao " + count);
     //count -= 1;
     count--;
 }
 let sum = 0;
-while(false) { // true
+while(true) { // true
     let v = prompt('Inserisci un numero o end per terminare');
     if(v === 'end' || v === null ) {
         break;
@@ -141,8 +141,7 @@ while(false) { // true
         console.log("Non hai inserito un numero")
     } else {
         sum += Number(v);
-    }
-    
+    } 
 }
 console.log(sum);
 
