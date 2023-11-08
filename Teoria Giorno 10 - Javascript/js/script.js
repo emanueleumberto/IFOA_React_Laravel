@@ -81,3 +81,7 @@ let body = section.parentNode.parentNode
 body.style.backgroundColor = '#555'
 
 section.children[1].innerText = '-------------------'
+
+function clickBtn() {
+    alert('Button cliccato!!!')
+}
