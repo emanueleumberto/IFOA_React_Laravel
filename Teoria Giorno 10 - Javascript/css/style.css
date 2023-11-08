@@ -1,0 +1,12 @@
+html {
+    background-color:beige;
+}
+
+#titolo {
+    color: red;
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
