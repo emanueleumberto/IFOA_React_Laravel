@@ -1,0 +1,77 @@
+/* Mobile First */
+
+.container {
+    background-color: #eee
+}
+
+.container h1 {
+    color: red
+}
+
+.container img {
+    width: 100%;
+}
+
+
+/*Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767px) { 
+    .container {
+        background-color: #4b0000
+    }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .container {
+        background-color: #164b00
+    }
+
+    .container img {
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+    .container {
+        background-color: #00144b
+    }
+
+    .container img {
+        width: 60%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        background-color: #4b004b3e
+    }
+
+    .container img {
+        width: 50%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) { 
+    .container {
+        background-color: #4b4300
+    }
+
+    .container img {
+        width: 30%;
+    }
+}
+
+/* print */
+@media print { 
+    .container {
+        background-color: #fff;
+        border: 1px solid black;
+    }
+
+    .container img {
+        display: none;
+    }
+}
