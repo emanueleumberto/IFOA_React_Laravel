@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+
+/* La propietà FLOAT ha come valore di default NONE 
+    ma possiamo modificarlo in LEFT o RIGHT 
+   La proprietà CLEAR serve per annullare gli effetti del FLOAT
+   ha come valori LEFT per annullare gli effetti precedenti del FLOAT,
+   RIGHT per annullare gli effetti successivi del FLOAT e 
+   BOTH per annullare gli effetti precedenti e successivi del FLOAT
+*/
+
+#box1 {
+    background: #ff0000;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    /* display: inline-block; */
+    float: left;
+}
+
+#box2 {
+    background: #4dff00;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    /* display: inline-block; */
+    float: left;
+}
+
+#box3 {
+    background: #2200ff;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    /* display: inline-block; */
+    float: left;
+}
+
+article {
+    width: 810px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    
+    background: #000000;
+    padding: 10px;
+    /* height: 250px; */
+}
+
+footer img {
+    width: 100px;
+    float: left;
+    margin: 10px 20px;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.2em;
+    clear: right;
+}
+
+/* POSITION 
+Position: STATIC è il Posizionamento di default
+Position: RELATIVE è il posizionamento Relativo agli oggetti circostanti
+Position: ABSOLUTE è il posizionamento Relativo alla finestra del browser
+Position: FIXED è il posizionamento Relativo alla finestra del browser
+Position: STICKY è il posizionamento Relativo alla finestra del browser 
+            e vincolato all’elemento parent
+*/
+
+section {
+    width: 810px;
+    margin: 0 auto;
+    background: rgb(125, 254, 254);
+}
+
+#pos {
+    background: #ff00f2;
+    width: 100px;
+    height: 100px;
+    /* position: static; */
+    position: relative;
+    /* position: absolute; */
+    /* position: fixed; */
+    top: -30px;
+    left: 30px;
+}
+
+/* .container {
+    margin-top: 250px;
+} */
+
+header {
+    background: rgb(122, 143, 143);
+    width: 100%;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+}
+
+header ul li{
+    padding: 10px;
+    display: inline-block;
+}
+
+header ul li:hover{
+    background-color: orange;
+    color: #000000;
+}
+
+.footer {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    background:#fff;
+    width: 100%;
+    /* position: fixed; */
+    position: sticky;
+    bottom: 0;
+}
+
+/* Z-index -> il valore di default di ogni elemento è 0
+        l'elemento con valore maggiore viene visualizzato sopra, 
+        l'elemento con valore minore viene visualizzato sotto
+*/
+
+article {
+    position: relative;
+    z-index: 2;
+}
+
+#pos {
+    z-index: 1;
+}
+
+
+
