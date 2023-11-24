@@ -10,8 +10,8 @@
     min-height: 200px;
     order: 4; /* default is 0 */
     flex-grow: 1; /* default is 1 */
-    flex-shrink: 1; /* default is 1 */
-    flex-basis: 50%; /* default is auto */
+    flex-shrink: 2; /* default is 1 */
+    flex-basis: 30%;  /* default is auto */
 }
 
 .box:nth-child(2) {
@@ -20,9 +20,9 @@
     min-height: 200px;
     order: -1; /* default is 0 */
     flex-grow: 1; /* default is 1 */
-    flex-shrink: 1; /* default is 1 */
-    flex-basis: 20%; /* default is auto */
-    align-self: stretch;
+    flex-shrink: 3; /* default is 1 */
+    flex-basis: 30%; /* default is auto */
+    /*align-self: stretch;*/
 }
 
 .box:nth-child(3) {
@@ -32,7 +32,7 @@
     order: 5; /* default is 0 */
     flex-grow: 1; /* default is 1 */
     flex-shrink: 1; /* default is 1 */
-    flex-basis: 30%; /* default is auto */
+    flex-basis: 30%;  /* default is auto */
 
 }
 
