@@ -1,0 +1,66 @@
+html {
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Codice CSS per Header */
+header p {
+  text-align: center;
+}
+
+/* Codice CSS per Main */
+/* main {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main p {
+    text-align: center;
+    color: red;
+}
+
+main a:hover {
+    background-color: #eeee;
+} */
+main {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: lightgrey;
+  /* a:hover {
+      background-color: #eeee;
+  } */
+}
+main a {
+  text-decoration: none;
+}
+main a:hover {
+  background-color: rgba(238, 238, 238, 0.9333333333);
+}
+main p {
+  /* text-align: center;
+  color: red; */
+  text-align: left;
+  color: blue;
+  font-size: 1.2em;
+  background-image: "url('img/test.jpg')";
+}
+main p span {
+  font-weight: bold;
+  color: black;
+}
+main h1 {
+  /* text-align: center;
+  color: red; */
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+}
+
+/* Codice CSS per Footer */
+footer p {
+  text-align: right;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+
+$size: 1.3em;
+$fontArial: Arial, Helvetica, sans-serif;
+
+html {
+    font-size: $size;
+    font-family: $fontArial;
+}
+
+@import '_header';
+@import '_main';
+@import '_footer';
+
