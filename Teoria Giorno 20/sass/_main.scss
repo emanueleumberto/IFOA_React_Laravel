@@ -1,0 +1,66 @@
+/* Codice CSS per Main */
+
+/* main {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main p {
+    text-align: center;
+    color: red;
+}
+
+main a:hover {
+    background-color: #eeee;
+} */
+
+@mixin miaRegola($color, $align) {
+    text-align: $align;
+    color: $color;
+}
+
+@mixin bkMix($prop, $val) {
+    background-#{$prop} : $val;
+}
+
+main {
+    border: 1px solid black;
+    padding: 10px;
+
+    @include bkMix("color", lightgrey);
+
+    a {
+        text-decoration: none;
+        &:hover {
+            background-color: #eeee;
+        }
+    }
+    /* a:hover {
+        background-color: #eeee;
+    } */
+    p {
+        /* text-align: center;
+        color: red; */
+        @include miaRegola(blue, left);
+        font-size: 1.2em;
+        span {
+            font-weight: bold;
+            color: black;
+        }
+        @include bkMix("image", "url('img/test.jpg')"); 
+    }
+
+    h1 {
+        /* text-align: center;
+        color: red; */
+        @include miaRegola(green, center);
+        text-decoration: underline;
+    }
+}
+
+
+
