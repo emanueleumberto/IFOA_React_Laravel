@@ -1,0 +1,31 @@
+/* Override Bootstrap Partial */
+
+@import "../../bootstrap-5.3.2/scss/functions";
+
+$blue:    #fd990d;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2.5,
+  6: $spacer * 5
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 1rem
+);
+
+@import "../../bootstrap-5.3.2/scss/variables";
+@import "../../bootstrap-5.3.2/scss/mixins";
+
+@import "../../bootstrap-5.3.2/scss/bootstrap";

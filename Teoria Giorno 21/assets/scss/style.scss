@@ -1,0 +1,120 @@
+/* Style Scss */
+
+@import 'reset';
+@import 'variables';
+@import 'colori';
+@import 'mixin-generici';
+@import 'function';
+
+html {
+    font-size: $rootSize;
+}
+
+body {
+    background-color: $light-color-primary;
+    h1 {
+        color: $darken-color-primary;
+        text-align: center;
+        text-transform: uppercase;
+        @media screen and (min-width: $tablet){
+            text-transform: capitalize;
+            color: brown;
+        }
+        @media  screen and (min-width: $desktop){
+            text-align: right;
+            color:rgb(0, 216, 144)
+        } 
+    }
+
+    h2 {
+        @extend h1;
+        text-decoration: underline;
+        @media screen and (min-width: $tablet){
+            color: rgb(255, 122, 253);
+        }
+        @media  screen and (min-width: $desktop){
+            text-align: right;
+            color:rgb(0, 216, 144)
+        } 
+    }
+
+    p {
+        @include nomeMixin();
+        @include paramMixin(1.3em, normal);
+
+        @media screen and (min-width: 570px) {
+            text-align: justify;
+            text-decoration: line-through;
+        }
+
+        @media  screen and (min-width:980px){
+            text-align: center;
+            text-decoration: overline;
+        } 
+    }
+
+    div.img {
+        width: pxToEm(250px, 16px);
+        height: pxToEm(180px, 16px);
+        // background-image: url('../img/bootstrap.png');
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        @include backGMixin("image", url("../img/bootstrap.png"));
+    }
+
+    footer { 
+        @include backGMixin("color", $darken-color-primary);
+        
+        h3 {
+            @include nomeMixin(); 
+            @include paramMixin(2.5em, lighter);
+            text-decoration: underline;
+        }
+    }
+ 
+}
+// $padding: 0, 0.25em, 0.5em, 1em, 1.5em, 3em;
+
+
+//$color: $color-primary, $color-secondary, green, yellow;
+$color: (
+    "color-primary": $color-primary, 
+    "color-secondary": $color-secondary,
+    "color-success": $color-success
+);
+
+@each $key, $val in $color {
+    .bg-#{$key} { background-color: $val; }
+}
+
+@each $key, $val in $color {
+    .text-#{$key} { color: $val; }
+}
+
+@each $key, $val in $color {
+    .btn-#{$key} { background-color: $val; text-align: center; }
+}
+
+$num: 0,1,2,3,4,5;
+@each $pad in $num {
+    .p-#{$pad} {
+        padding: #{$pad} + 'em';
+    }
+}
+
+@for $i from 0 to 6 {
+    .m-#{$i} {
+        margin: #{$i} + 'em';
+    }
+}
+
+$i: 0;
+@while ($i <= 5) {
+    .box-#{$i} {
+        border: $i+px solid black;
+    }
+    $i: $i + 1;
+}
+
+
+

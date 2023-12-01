@@ -1,0 +1,13 @@
+/* Partial Colori */
+
+$color-primary: blue;
+$light-color-primary: lighten($color-primary, 20%);
+$darken-color-primary: darken($color-primary, 15%);
+
+$color-secondary: red;
+$light-color-secondary: lighten($color-secondary, 20%);
+$darken-color-secondary: darken($color-secondary, 15%);
+
+$color-success: green;
+$light-color-success: lighten($color-success, 20%);
+$darken-color-success: darken($color-success, 15%);

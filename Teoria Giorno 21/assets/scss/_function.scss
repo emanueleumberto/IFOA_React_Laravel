@@ -1,0 +1,10 @@
+/* Function Partial */
+
+@function pxToEm($pixel, $rootEm) {
+    $em: ($pixel/$rootEm) * 1em;
+    @return $em;
+}
+
+@function lightColor($color, $percent) {
+    @return lighten($color, $percent);
+}
