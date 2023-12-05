@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AppIFOA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h1 class="text-center my-3">Js - Bootstrap - Sass</h1>
+        <div class="my-3" id="petForm">
+          <form>
+          <div class="row g-3">
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="petName..." aria-label="petName">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="ownerName..." aria-label="ownerName">
+            </div>
+            <div class="col-sm">
+              <select class="form-select" aria-label="Default select example" placeholder="Species...">
+                <option selected>Open this select menu</option>
+                <option value="cane">Cane</option>
+                <option value="gatto">Gatto</option>
+                <option value="coniglio">Coniglio</option>
+              </select>
+            </div>
+            <div class="col-sm">
+              <select class="form-select" aria-label="Default select example" placeholder="Breed...">
+                <option selected>Open this select menu</option>
+                <option value="labrador">Labrador</option>
+                <option value="soriano">Soriano</option>
+                <option value="nano">Nano</option>
+              </select>
+            </div>
+            <div class="col-sm">
+              <button type="button" class="btn btn-outline-danger w-100">Add</button>
+            </div>
+          </form>
+          </div>
+        </div>
+        <div class="my-3" id="listPet">
+          <ul class="list-group list-group-flush">
+            <!-- <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li> -->
+          </ul>
+          <div><h3>Totale <span>0</span></h3></div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
