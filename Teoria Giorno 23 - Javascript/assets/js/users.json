@@ -1,0 +1,38 @@
+[
+    {
+        "nome": "Mario",
+        "cognome": "Rossi",
+        "eta": 25,
+        "occhiali": true,
+        "linguaggi": ["Javascript", "html", "css", "sass"],
+        "indirizzo": {
+            "via": "test, 53",
+            "citta": "Roma",
+            "regione": "Lazio"
+        }
+    },
+    {
+        "nome": "Giuseppe",
+        "cognome": "Verdi",
+        "eta": 41,
+        "occhiali": false,
+        "linguaggi": ["html", "css"],
+        "indirizzo": {
+            "via": "Marconi, 12",
+            "citta": "Milano",
+            "regione": "Lombardia"
+        }
+    },
+    {
+        "nome": "Francesca",
+        "cognome": "Neri",
+        "eta": 33,
+        "occhiali": false,
+        "linguaggi": [],
+        "indirizzo": {
+            "via": "8 dicembre, 5",
+            "citta": "Napoli",
+            "regione": "Campania"
+        }
+    }
+]

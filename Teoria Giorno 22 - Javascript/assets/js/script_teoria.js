@@ -251,6 +251,66 @@ console.log(u.saluta());
 console.log(m.saluta());
 console.log(d.saluta());
 
-console.log(u.lavora())
+//console.log(u.lavora())
 
 Math.random();
+
+
+/* This */
+
+class Veicolo {
+    modello;
+    marca;
+    cilindrata;
+    targa;
+    
+    constructor(ma, mo, ci, ta) {
+        this.marca = ma;
+        this.modello = mo;
+        this.cilindrata = ci;
+        this.targa = ta;
+    }
+
+    stampa() {
+        console.log(this);
+    }
+}
+
+class Automobile extends Veicolo {
+    proprietario;
+    constructor(marca, modello, cilindrata, targa, proprietario) {
+        /* super.marca = marca;
+        super.modello = modello;
+        super.cilindrata = cilindrata;
+        super.targa = targa; */
+        super(marca, modello, cilindrata, targa)
+        this.proprietario = proprietario;
+    }
+
+}
+
+let v = new Automobile('Fiat', 'Panda', '1000cc', 'AB123CD', 'Mario Rossi');
+/* v.marca = 'Fiat';
+v.modello = 'Panda';
+v.cilindrata = '1000cc';
+v.targa = 'AB123CD'; */
+
+let t = new Veicolo();
+t.marca = 'Mercedes';
+t.modello = 'Smart';
+t.cilindrata = '800cc';
+t.targa = 'LL999BA';
+
+/* console.log(v);
+console.log(t); */
+
+t.stampa();
+v.stampa();
+
+
+class Persona {}
+class Dipendente extends Persona {}
+
+class Operaio extends Dipendente {}
+class Impiegato extends Dipendente {}
+class Dirigente extends Dipendente {}
