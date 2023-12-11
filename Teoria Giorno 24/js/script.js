@@ -11,7 +11,7 @@ xhr.onreadystatechange = function() {
         let json = xhr.responseText;
         let obj = JSON.parse(json);
         console.log(obj);
-        createList(obj);
+        createList(obj); 
     }
 }
 
