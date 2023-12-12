@@ -1,6 +1,6 @@
 // Example https://www.pexels.com/
 
-const apiKey = 'vxo2G9TAU3fxvGtMIqJfQku23tzKwnyIjFmW4FMKhJMa2RNOldSsFMpU';
+const apiKey = 'apyKey';
 let search = '';
 // Soluzione Esercizio
 
