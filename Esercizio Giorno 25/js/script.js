@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let id = params.get("id");
         search = params.get("search");
         getPhotoById(id);
+        
     }
 
 })
