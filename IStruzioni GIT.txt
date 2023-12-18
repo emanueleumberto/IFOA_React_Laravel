@@ -1,7 +1,24 @@
-git clone https://github.com/vostroaccount/vostrarepo.git
+
+// Soluzione 1
+git init -> Crea una nuova repository in locale
+git branch -M main -> crea un nuovo branch in locale di nome main
+git remote add origin https://github.com/vostroaccount/vostrarepo.git -> collego la mia repositori locale con la repository remota
+git push -u origin main -> primo push
+
+// Soluzione 2
+git clone https://github.com/vostroaccount/vostrarepo.git -> clona una repository esistende in locale
+
 
 git status -> verifica lo stato di una repository locale
 
-git add .
-git commit -m "messaggio"
-git push
+git add . -> traccia i nuovi file
+git commit -m "messaggio" -> Salva i nuovi file tracciati in una repository locale
+git push -> Salvo il contenuto della repository locale nella repository remota
+git pull -> Scarico  in locale quello che è il contenuto della repository remota
+
+git branch nomeBranch -> Creo un nuovo branch
+git branch -> Stampo un elenco di branch
+git checkout nomeBranch -> Mi sposto sul nuovo branch
+git merge nomeBranch -> unisco il branch con quello principale
+git branch -d nomeBranch -> cancello un branch dopo il merge
+
