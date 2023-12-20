@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "lastName": "Smith",
+      "email": "smith@example.com",
+      "password": "$2a$10$NF3dhMHFisnTrPHSVEbSp.OJwpNdRGve7tQVYurmoQIsAlKm7hmwq",
+      "city": "San Francisco"
+    },
+    {
+      "email": "mario.rossi@example.com",
+      "password": "$2a$10$H.T/cbRmd5F2DA3wxRg1VuaJKvDDPIeiqzoXXz4Z3fhGBNs.Lz.4C",
+      "name": "Mario",
+      "lastName": "Rossi",
+      "city": "Roma",
+      "id": 2
+    }
+  ],
+  "products": []
+}

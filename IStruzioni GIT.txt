@@ -13,12 +13,30 @@ git status -> verifica lo stato di una repository locale
 
 git add . -> traccia i nuovi file
 git commit -m "messaggio" -> Salva i nuovi file tracciati in una repository locale
-git push -> Salvo il contenuto della repository locale nella repository remota
-git pull -> Scarico  in locale quello che è il contenuto della repository remota
+git push <remote> -> Salvo il contenuto della repository locale nella repository remota
+git push <remote> <branch> -> Salvo il contenuto della repository locale nella repository remota in uno specifico branch
+git fetch <remote> -> scarica i commit presenti sul repository remoto senza modificare il lavoro in locale. 
+git fetch <remote> <branch> -> scarica i commit presenti sul repository remoto senza modificare il lavoro in locale. 
+git pull <remote> -> Scarico e sovrascrive in locale quello che è il contenuto della repository remota
 
 git branch nomeBranch -> Creo un nuovo branch
 git branch -> Stampo un elenco di branch
+git branch --no-merged -> Stampo un elenco di branch non uniti con il branch principale
 git checkout nomeBranch -> Mi sposto sul nuovo branch
+git checkout -b nomeBranch -> Creo un nuovo branch e Mi sposto sul nuovo branch
 git merge nomeBranch -> unisco il branch con quello principale
 git branch -d nomeBranch -> cancello un branch dopo il merge
+git branch -D nomeBranch -> cancello un branch non unito con il branch principale
+
+git tag v1.0.0 -> sto inserendo un tag lightweight
+git tag -a v1.0.0 -m "Info sul tag di rilascio" -> sto inserendo un tag annotated più completo
+git tag -> Stampo un elenco di tag
+
+git remote -v -> stampa una lista di server remoti collegati alla mia repository
+git remote add <nome> <url> -> aggiungo una connessione alla mia repository remota
+
+git log -> stampo un elenco con la cronologia dei commit effettuati
+git log --pretty-oneline -3 -> stampo gli ultimi 3 commit effettuati
+git log --pretty-oneline --sice=1week -> stampo i commit effettuati nella ultima settimana
+git log --pretty-oneline --after=2022-01-01 --before=2022-01-01 -> stampo i commit effettuati prima o dopo una determinata data
 
