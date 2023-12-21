@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const urlLogin = 'http://localhost:3000/login';
         let userLogin = {
             email: "mario.rossi@example.com",
-            password: "12345"
+            password: "123456"
         } 
         fetch(urlLogin, {
             method: 'POST', 
