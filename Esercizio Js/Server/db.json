@@ -1,37 +1,32 @@
 {
   "users": [
     {
-      "email": "mudef@example.com",
-      "password": "$2a$10$B7vibEv6El8Aqbq1i0KjWePJGrdDJ8lB07RdqVVz/GbU469YEUbF.",
-      "firstname": "Darryl",
-      "lastname": "Wilkins",
-      "city": "Albuquerque",
+      "email": "qomuda@example.com",
+      "password": "$2a$10$Hj133Nvk2rtFMEVVsDdjC.cBTjzz7/xFeMrsIgsvn9bSca9odt24O",
+      "firstname": "Sigourney",
+      "lastname": "Ryan",
+      "city": "Colorado Springs",
       "id": 1
-    },
-    {
-      "email": "jubidavoqu@example.com",
-      "password": "$2a$10$0oGLNJ.qbVvhEhK4E12EsOannWSmKbjakeh48pGpD305kv.IPUb1K",
-      "firstname": "Melissa",
-      "lastname": "Ramirez",
-      "city": "Louisville",
-      "id": 2
-    },
-    {
-      "email": "muqypese@example.com",
-      "password": "$2a$10$aPNAqAapT3Pmyq.S/3vKmeAPYHCcZWyyCGG.Mqnzudi4siEsUi3xa",
-      "firstname": "Miriam",
-      "lastname": "Rollins",
-      "city": "Atlanta",
-      "id": 3
-    },
-    {
-      "email": "zyfifosu@example.com",
-      "password": "$2a$10$ZjEMJgQzYnsE31tkA.7I0ukzu1KrwQ/fWZ48zhYuyBEDQIso4ytcC",
-      "firstname": "Sasha",
-      "lastname": "Woods",
-      "city": "New York",
-      "id": 4
     }
   ],
-  "products": []
+  "products": [
+    {
+      "id": 1,
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "category": "Smartphone",
+      "price": "750",
+      "quantity": "4",
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-13-pro-max-graphite-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072989055"
+    },
+    {
+      "brand": "Samsung",
+      "model": "S23",
+      "category": "Smartphone",
+      "price": "623",
+      "quantity": "2",
+      "image": "https://images.samsung.com/it/smartphones/galaxy-s23/images/galaxy-s23-highlights-exclusive-kv.jpg",
+      "id": 2
+    }
+  ]
 }

@@ -40,28 +40,29 @@
         <div id="formProducts">
             <div class="row g-3">
                 <div class="col-sm">
-                  <input type="text" class="form-control" placeholder="Marca..." aria-label="Marca">
+                  <input type="text" class="form-control" name="brand" placeholder="Brand..." aria-label="brand">
                 </div>
                 <div class="col-sm">
-                  <input type="text" class="form-control" placeholder="Modello..." aria-label="Modello">
+                  <input type="text" class="form-control" name="model" placeholder="Model..." aria-label="model">
                 </div>
                 <div class="col-sm">
-                  <input type="text" class="form-control" placeholder="Categoria..." aria-label="Categoria">
+                  <input type="text" class="form-control" name="category" placeholder="Category..." aria-label="category">
                 </div>
                 <div class="col-sm">
-                  <input type="number" class="form-control" placeholder="Prezzo..." aria-label="Prezzo">
+                  <input type="number" class="form-control" name="price" placeholder="Price..." aria-label="price">
                 </div>
                 <div class="col-sm">
-                    <input type="number" class="form-control" placeholder="Quantità..." aria-label="Quantita">
+                    <input type="number" class="form-control" name="quantity" placeholder="Quantity..." aria-label="quantity">
                 </div>
                 <div class="col-sm">
-                    <input type="text" class="form-control" placeholder="Immagine..." aria-label="Immagine">
+                    <input type="text" class="form-control" name="image" placeholder="Image..." aria-label="image">
                 </div>
                 <div class="col-sm">
                     <button type="button" class="btn btn-secondary w-100">Add</button>
                 </div>
               </div>
-              <div class="my-5">
+          </div>
+              <div class="my-5" id="tableProducts">
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -69,6 +70,7 @@
                           <th scope="col">Immagine</th>
                           <th scope="col">Modello</th>
                           <th scope="col">Marca</th>
+                          <th scope="col">Categoria</th>
                           <th scope="col">Quantità</th>
                           <th scope="col">Prezzo</th>
                           <th scope="col"></th>
@@ -94,7 +96,67 @@
                       </tbody>
                 </table>
               </div>
+        <!-- Modal Update -->
+      <!-- Modal -->
+      <div class="modal fade" id="updateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Update Product</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="card-body">
+                  <div class="mb-3 row">
+                    <label for="brand" class="col-sm-2 col-form-label">Brand</label>
+                    <div class="col-sm-10">
+                      <input type="hidden" name="id" class="form-control"/>
+                      <input type="text" name="brand" class="form-control" id="brand"/>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="model" class="col-sm-2 col-form-label">Model</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="model" class="form-control" id="model"/>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="category" class="form-control" id="category"/>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="price" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                      <input type="number" name="price" class="form-control" id="price"/>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
+                    <div class="col-sm-10">
+                      <input type="number" name="quantity" class="form-control" id="quantity"/>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="image" class="col-sm-2 col-form-label">Image</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="image" class="form-control" id="image"/>
+                    </div>
+                  </div>
+                  <div class="mb-3 row px-5">
+                    <button type="button" class="btn btn-outline-dark w-100">Update</button>
+                  </div>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
