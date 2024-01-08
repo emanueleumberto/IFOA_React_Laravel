@@ -7,6 +7,14 @@
       "lastname": "Ryan",
       "city": "Colorado Springs",
       "id": 1
+    },
+    {
+      "email": "ditol@example.com",
+      "password": "$2a$10$qcy4YEzvLQNgY65jpG8CpOLbByvmkkFY3PECYWx.Eb9nAxAz3nzku",
+      "firstname": "Leroy",
+      "lastname": "Lindsay",
+      "city": "Portland",
+      "id": 2
     }
   ],
   "products": [
@@ -16,7 +24,7 @@
       "model": "iPhone 13",
       "category": "Smartphone",
       "price": "750",
-      "quantity": "4",
+      "quantity": "5",
       "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-13-pro-max-graphite-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072989055"
     },
     {

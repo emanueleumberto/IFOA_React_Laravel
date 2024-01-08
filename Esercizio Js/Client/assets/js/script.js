@@ -158,7 +158,7 @@ function getAllProducts() {
     fetch(urlApi+'products', {
         method: 'GET'})
     .then(response => response.json())
-    .then(json => createTableAdminProducts(json))
+    .then(json => {console.log(json); createTableAdminProducts(json)})
     .catch(err => console.log(err))
 }
 
