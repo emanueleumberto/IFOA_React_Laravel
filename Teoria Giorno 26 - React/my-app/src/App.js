@@ -6,7 +6,8 @@ import TerzoComp from './components/TerzoComp';
 const users = [
   {id: 1, name: 'John', lastName: 'Smith', city: 'San Francisco'}, 
   {id: 2, name: 'Mario', lastName: 'Rossi', city: 'Roma'},
-  {id: 3, name: 'Jane', lastName: 'Smith', city: 'London'}
+  {id: 3, name: 'Jane', lastName: 'Smith', city: 'London'},
+  {id: 4, name: 'Mario', lastName: 'Verdi', city: 'Milano'},
 ]
 
 function App() {

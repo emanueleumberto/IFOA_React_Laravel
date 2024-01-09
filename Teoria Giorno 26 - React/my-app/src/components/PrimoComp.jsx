@@ -5,7 +5,7 @@ function PrimoComp(props) {
     return (
         <React.Fragment>
             <h1>{props.title}</h1>
-            {props.list.map(ele => <p>{ele.name} {ele.lastName} - {ele.city}</p> )}
+            {props.list.map(ele => <p key={ele.id}>{ele.name} {ele.lastName} - {ele.city}</p> )}
             <strong>Tot. {props.list.length}</strong>
         </React.Fragment>
     )

@@ -9,7 +9,7 @@ export default class TerzoComp extends Component {
         return (
             <>
                 <h1>{this.props.title}</h1>
-                {this.props.list.map(ele => <Paragraph user={ele} /> )}
+                {this.props.list.map(ele => <Paragraph key={ele.id} user={ele} /> )}
                 <strong>Tot. {this.props.list.length}</strong>
             </>
         )
