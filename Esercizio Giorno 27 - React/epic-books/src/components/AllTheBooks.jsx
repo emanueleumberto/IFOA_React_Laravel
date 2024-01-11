@@ -27,12 +27,12 @@ componentDidMount() {
         } 
     }) */
 
-    /* this.setState({ 
+    this.setState({ 
         books: [...Fantasy, ...History, ...Horror, ...Romance, ...Scifi]
         } 
-    ) */
+    )
 
-    fetch('../books/fantasy.json').then(response => response.json()).then(json => this.setState({ 
+    /* fetch('../books/fantasy.json').then(response => response.json()).then(json => this.setState({ 
         books: [ ...this.state.books, ...json ]
     }))
     fetch('../books/history.json').then(response => response.json()).then(json => this.setState({ 
@@ -40,7 +40,7 @@ componentDidMount() {
     }))
     fetch('../books/horror.json').then(response => response.json()).then(json => this.setState({ 
         books: [ ...this.state.books, ...json ]
-    }))
+    })) */
     
 }
 
