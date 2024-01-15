@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import UsersComponent from './UsersComponent'
 import PostComponent from './PostComponent';
 import CommentsComponent from './CommentsComponent';
+
 export default function JsonPlaceholderComponent() {
 
     const [users, setUsers] = useState([]);

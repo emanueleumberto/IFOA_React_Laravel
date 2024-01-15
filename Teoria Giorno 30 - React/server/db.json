@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "password": "Pa$$word",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "password": "Pa$$word",
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net"
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "password": "Pa$$word",
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info"
+    },
+    {
+      "email": "huxihuwypo@example.com",
+      "password": "$2a$10$P6fTJF.G2CfMLvZISu6RpOLcp/EaQVROC6oNTA5I6Ro/VCviBqNKW",
+      "name": "Lavinia Golden",
+      "username": "koxajupuvi",
+      "phone": "+1 (279) 476-8627",
+      "website": "https://www.xiqawov.in",
+      "id": 6
+    },
+    {
+      "email": "wudez@example.com",
+      "password": "$2a$10$9onnK32Lun1JeyhnZQrYneheGyhuL3vST/FivrGaXK6oogd..Jx16",
+      "name": "Pandora Figueroa",
+      "username": "kozumuv",
+      "phone": "+1 (613) 959-7061",
+      "website": "https://www.zeqixola.co",
+      "id": 7
+    },
+    {
+      "email": "kajyhymyg@example.com",
+      "password": "$2a$10$lScQZCmKS2/nAtbngxM0hetHgbMzVTKu8SQjT.sFqcqziZPWg5vXG",
+      "name": "Fiona Wyatt",
+      "username": "tiribu",
+      "phone": "+1 (922) 806-9541",
+      "website": "https://www.fukijaxejim.info",
+      "id": 9
+    },
+    {
+      "email": "keluwify@example.com",
+      "password": "$2a$10$l8yVYtgS33K7fJ3vSa.wpOfiweiW0TpKkTo/Nx8M0ntW3ohERl2OG",
+      "name": "Raven Rivas",
+      "username": "pidyhoku",
+      "phone": "+1 (344) 369-8681",
+      "website": "https://www.butomelonafam.us",
+      "id": 10
+    }
+  ]
+}
