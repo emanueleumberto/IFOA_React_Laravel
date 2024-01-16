@@ -33,24 +33,17 @@ const handleSubmit = (newUser) => {
   console.log(newUser)
 
   // Soluzione con il fetch
-/*   fetch('http://localhost:3000/users' , {
+  /* fetch('http://localhost:3000/users' , {
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
       body: JSON.stringify(newUser)})
   .then(response => response.json())
-  .then(json => setUpdate(!update))
+  .then(json => { console.log(json); setUpdate(!update)})
   .catch(error =>console.log(error)) */
 
-
-  axios.post(`http://localhost:3000/users`, { newUser })
-      .then(response => {
-          console.log(response)
-          if(response.status === 200) {
-
-          } else {
-              setError(response.data)
-          }
-      }).catch(error => setError(error.response.data))
+  axios.post(`http://localhost:3000/users`, newUser)
+      .then(response => setUpdate(!update))
+      .catch(error => setError(error.response.data))
 }
 
 const removeUser = (obj) => {
@@ -77,3 +70,8 @@ const removeUser = (obj) => {
     </>
   )
 }
+
+
+
+
+
