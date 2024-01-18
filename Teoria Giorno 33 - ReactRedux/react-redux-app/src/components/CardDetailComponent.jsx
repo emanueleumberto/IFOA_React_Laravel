@@ -6,13 +6,13 @@ import { useParams } from 'react-router-dom';
 export default function CardDetailComponent() {
 
     const { email } = useParams();
-    const userlist = useSelector( state => state );
+    const userlist = useSelector( state => state.users );
     const [user, setUser] = useState();
 
     useEffect(() => {
         let user = userlist.find(user => user.email === email)
         setUser(user);
-    }, [])
+    }, [email, userlist])
     
 
   return (

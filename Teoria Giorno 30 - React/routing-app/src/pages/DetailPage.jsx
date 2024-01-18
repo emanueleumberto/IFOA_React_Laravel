@@ -6,7 +6,9 @@ import { Button, Card, ListGroup } from 'react-bootstrap'
 
 export default function DetailPage() {
 
-    const { id } = useParams()
+    const { id } = useParams() // { id: ''}
+    /* const params = useParams();
+    const id = params.id */
     const navigate = useNavigate();
     const [userDetail, setUserDetail] = useState({});
 
