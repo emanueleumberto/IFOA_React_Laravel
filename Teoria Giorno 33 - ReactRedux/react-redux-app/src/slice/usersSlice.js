@@ -36,19 +36,7 @@ export const usersSlice = createSlice(
       deleteUser: create.reducer((state, action) => {
         console.log(action);
         state.userlist =  state.userlist.filter(ele => ele.email !== action.payload.email)
-      }),
-      /* getAllUsers: create.asyncThunk(
-        async () => {
-          console.log('users')
-          const res = await fetch('https://jsonplaceholder.typicode.com/users')
-          return await res.json()
-        },
-        {
-          fulfilled: (state, action) => {
-            state.push(action.payload)
-          },
-        }
-      ) */
+      })
     }),
 
     extraReducers: builder => {
@@ -61,7 +49,7 @@ export const usersSlice = createSlice(
         })
         .addCase(getAllUsers.fulfilled, (state, action) => {
           state.loading = false
-          state.userlist.push(...action.payload)
+          state.userlist = action.payload
         })
       }
   }

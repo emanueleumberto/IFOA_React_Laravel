@@ -1,12 +1,13 @@
 import { Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { addFavourite, removeFavourite } from '../actions';
+// import { addFavourite, removeFavourite } from '../actions';
+import { addFavourite, removeFavourite } from '../slice/favouritesSlice'
 
 const Job = ({ data }) => {
 
   const dispatch = useDispatch();
-  const favourites = useSelector(state => state.favourites)
+  const favourites = useSelector(state => state.favourites.favourites)
 
   const company = favourites.find( c => c.company_name === data.company_name)
   console.log(company)
