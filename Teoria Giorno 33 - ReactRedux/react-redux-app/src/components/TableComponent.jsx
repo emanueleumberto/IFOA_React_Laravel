@@ -1,24 +1,37 @@
 import React, { useEffect } from 'react';
-import { Table } from 'react-bootstrap'
+import { Alert, Spinner, Table } from 'react-bootstrap'
 import RowTableComponent from './RowTableComponent';
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllUsers } from '../actions';
+// import { getAllUsers } from '../actions';
+import { getAllUsers } from '../slice/usersSlice'
 
 export default function TableComponent() {
 
-  const userlist = useSelector( state => state.users );
+  const userlist = useSelector( state => state.users.userlist );
+  const loading = useSelector( state => state.users.loading );
+  const error = useSelector( state => state.users.error );
+  
   const dispatch = useDispatch();
 
   useEffect(() => {
-    /* if(userlist.length === 0) {
+    if(userlist.length === 0) {
       dispatch(getAllUsers())
-    } */
+    }
     console.log(userlist)
-  }, [])
+    console.log(loading)
+    console.log(error)
+  }, [userlist, loading, error, dispatch])
   
 
   return (
-    <Table striped bordered hover variant="dark">
+    <>    
+    { loading && <Spinner animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>  }
+
+    { error  ? (<Alert variant="danger">
+      <Alert.Heading>{error}</Alert.Heading>
+    </Alert>) : (<Table striped bordered hover variant="dark">
         <thead>
           <tr>
             <th>#</th>
@@ -38,5 +51,8 @@ export default function TableComponent() {
              
         </tbody>
       </Table>
+    )}
+      </>
+
   )
 }

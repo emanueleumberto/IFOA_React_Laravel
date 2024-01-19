@@ -16,6 +16,7 @@ const Job = ({ data }) => {
     style={{ border: '1px solid #00000033', borderRadius: 4 }}
   >
     <Col xs={3}>
+    {/* (condizione) ? (true) : (false) */}
     { !company ? (
       <Button 
           variant="outline-dark" 

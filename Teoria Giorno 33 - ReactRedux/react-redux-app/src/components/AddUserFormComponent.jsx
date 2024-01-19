@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
-import { addUser } from '../actions';
+import { addUser } from '../slice/usersSlice';
+// import { addUser } from '../actions';
 
 export default function AddUserFormComponent() {
 

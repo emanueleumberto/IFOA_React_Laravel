@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 export default function CardDetailComponent() {
 
     const { email } = useParams();
-    const userlist = useSelector( state => state.users );
+    const userlist = useSelector( state => state.users.userlist );
     const [user, setUser] = useState();
 
     useEffect(() => {

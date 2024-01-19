@@ -26,7 +26,8 @@ export const getAllUsers = () => {
     return function(dispatch, getState) { // function(dispatch, state)
         axios.get('https://jsonplaceholder.typicode.com/users')
             .then(response => {
-                return dispatch({ type: 'GET_ALL_USERS' , payload: response.data})
+                if(response.ok)
+                    return dispatch({ type: 'GET_ALL_USERS' , payload: response.data})
             })
     }
         

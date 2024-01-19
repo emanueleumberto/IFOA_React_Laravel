@@ -1,8 +1,4 @@
-
-import { configureStore } from '@reduxjs/toolkit'
-import usersReducers  from '../slice/usersSlice'
-
-
+// Soluzione senza Toolkit
 /* import { applyMiddleware, combineReducers, createStore } from 'redux'
 import usersReducer from '../reducers/users';
 import cartReducer from '../reducers/cart';
@@ -38,6 +34,7 @@ import { thunk } from 'redux-thunk' */
   }
 ]; */
 
+
 /* const state = {
   users: [],
   cart: []
@@ -51,9 +48,13 @@ import { thunk } from 'redux-thunk' */
 // createStore(storeReducer, initialState?, middleware?)
 // export const store = createStore(bigReducers, state, applyMiddleware(thunk)) 
 
-// Con il Toolkit
+
+
+// Soluzione con il Toolkit
+
+import { configureStore } from '@reduxjs/toolkit'
+import reducer from '../slice/usersSlice'
+
 export const store = configureStore({
-  reducer: {
-    users: usersReducers
-  }
+  reducer: { users: reducer },
 })
