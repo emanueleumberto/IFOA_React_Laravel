@@ -25,7 +25,7 @@ import { encryptTransform } from 'redux-persist-transform-encrypt';
 
 const rootPersistConfig = {
   key: "root", // inserisci "root" per salvare l'intero store storage,
-  storage,
+  storage, // su che storage voglio salvare i dati
   // sessionStorage
   // Codificare lo storage
    transforms: [
@@ -55,3 +55,4 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
+
